@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "title": "The Strength of a Mother",
+    "excerpt": "Celebrating the resilience and love mothers show every day.",
+    "fullContent": "Here is the full detailed story of the strength of a mother...",
+    "author": "Jane Smith",
+    "submissionDate": "2025-04-28",
+    "category": "Inspiration",
+    "readingTime": 4,
+    "imageUrl": "/mother1.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Health Tips for Moms",
+    "excerpt": "Simple and effective health advice to keep mothers thriving.",
+    "fullContent": "Here is the full detailed health advice...",
+    "author": "Mary Johnson",
+    "submissionDate": "2025-04-27",
+    "category": "Health",
+    "readingTime": 3,
+    "imageUrl": "/mother2.jpg"
+  }
+]
