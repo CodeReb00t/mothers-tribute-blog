@@ -26,7 +26,7 @@ const About = () => {
 
 
             <p className="mb-4">
-                I'm a passionate <strong>Full Stack Web and App Developer</strong> who also creates content
+                I am a passionate <strong>Full Stack Web and App Developer</strong> who also creates content
                 around <strong>technology</strong>, <strong>travel</strong>, and <strong>personal growth</strong>. I
                 specialize in building
                 <strong> scalable</strong>, <strong>responsive</strong> applications across both frontend and backend
@@ -44,7 +44,7 @@ const About = () => {
                 of a
                 digital nomad with the mindset of a problem-solver. Whether you're here
                 to <strong>learn</strong>, <strong>build</strong>,
-                or <strong>explore</strong>, you're in the right place.
+                or <strong>explore</strong>, you are in the right place.
                 Let’s <strong>create</strong>, <strong>iterate</strong>,
                 and <strong>discover</strong> — one project and one post at a time. 💡🧠💻
             </p>

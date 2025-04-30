@@ -111,7 +111,7 @@ export default function Hero() {
                         />
                         <h3 className="font-bold">Devansh Kumar Gupta</h3>
                         <p className="text-sm text-muted-foreground mt-2">
-                            I'm a passionate Full Stack Web and App Developer 👨‍💻 with an interest in building seamless,
+                            I am a passionate Full Stack Web and App Developer 👨‍💻 with an interest in building seamless,
                             user-focused digital experiences. With a strong foundation in both frontend and backend
                             technologies, I love bringing ideas to life from concept to deployment 🚀.
                         </p>
