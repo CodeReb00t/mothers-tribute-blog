@@ -14,7 +14,7 @@ const About = () => {
 
       {/* Name and Title */}
       <h2 className="text-2xl font-medium">My name is</h2>
-      <h1 className="text-3xl font-bold mb-4">Jaspreet Bhamrai</h1>
+      <h1 className="text-3xl font-bold mb-4">Devansh Kumar Gupta</h1>
 
       {/* Social Icons */}
       <div className="flex justify-center gap-4 mb-6">

@@ -2,23 +2,56 @@
   {
     "id": "1",
     "title": "The Strength of a Mother",
-    "excerpt": "Celebrating the resilience and love mothers show every day.",
-    "fullContent": "Here is the full detailed story of the strength of a mother...",
+    "excerpt": "From sleepless nights to unconditional love, a mother’s strength knows no bounds. Her silent sacrifices and unspoken resilience shape generations. On this day, we honor the quiet power that drives our families forward.",
+    "fullContent": "A mother’s strength is not measured by the weights she lifts, but by the burdens she silently bears. She is the first to wake and the last to sleep, always thinking ahead—about meals, school, emotions, and dreams that are not even her own. She’s the quiet hand holding a feverish forehead, the firm voice guiding right from wrong, and the gentle hug after a bad day.\n\nWhether she's juggling a career, running a household, or caring full-time, her strength is unwavering. It’s found in the way she smiles through exhaustion, the calm in her voice during chaos, and the consistency with which she loves—fiercely, endlessly, and unconditionally. On this Mother’s Day, let’s honor all mothers whose strength keeps the world together, even when no one is watching.",
     "author": "Jane Smith",
     "submissionDate": "2025-04-28",
     "category": "Inspiration",
     "readingTime": 4,
-    "imageUrl": "/mother1.jpg"
+    "imageUrl": "https://unsplash.com/photos/OyCl7Y4y0Bk"
   },
   {
     "id": "2",
     "title": "Health Tips for Moms",
-    "excerpt": "Simple and effective health advice to keep mothers thriving.",
-    "fullContent": "Here is the full detailed health advice...",
+    "excerpt": "Motherhood is beautiful but demanding. Taking care of yourself isn’t a luxury—it’s essential. These practical health tips will help moms stay energized and balanced throughout their busy lives.",
+    "fullContent": "Mothers often put everyone else first, but to pour into others, you must refill yourself. Here are some key health tips designed especially for moms:\n\n1. **Prioritize Sleep:** Lack of sleep is common, but finding ways to improve rest—even power naps or earlier bedtimes—can rejuvenate your body and mind.\n2. **Eat Smart:** Opt for whole foods. Even simple changes like adding a smoothie or salad a day can improve energy levels.\n3. **Stay Active:** Short walks, at-home yoga, or dance sessions with kids can boost your mood and physical health.\n4. **Mental Check-Ins:** Don’t ignore stress. Journaling, meditation, or even talking to a friend can help ease mental load.\n5. **Annual Check-Ups:** Your health matters. Schedule regular medical and dental visits to catch issues early.\n\nHealthy moms make happy homes. Self-care isn’t selfish—it’s survival.",
     "author": "Mary Johnson",
     "submissionDate": "2025-04-27",
     "category": "Health",
     "readingTime": 3,
-    "imageUrl": "/mother2.jpg"
+    "imageUrl": "https://unsplash.com/photos/Cf4ClvPrHyA"
+  },
+  {
+    "id": "3",
+    "title": "A Letter to My Mother",
+    "excerpt": "Sometimes words are all we have to express what actions cannot. This heartfelt letter captures the love, gratitude, and admiration we often forget to say out loud.",
+    "fullContent": "Dear Mom,\n\nI don’t say this enough, but thank you. Thank you for every ride to school, every packed lunch, every bedtime story. Thank you for your patience on my worst days and your encouragement on my best. You made it look easy, even when I know it wasn’t.\n\nYour sacrifices weren’t small. They were mountains moved quietly, just so I could walk a little easier. You gave me confidence, not by pushing me, but by believing in me. You taught me to stand tall, even when I wanted to hide. And through it all, your love never wavered.\n\nIf I am kind, it’s because you were kind first. If I am strong, it’s because I watched you rise, again and again. Thank you for being my anchor and my wings. I love you more than I’ve ever told you—and always will.\n\nLove always,\nYour Child",
+    "author": "Emily Carter",
+    "submissionDate": "2025-04-29",
+    "category": "Personal",
+    "readingTime": 5,
+    "imageUrl": "https://unsplash.com/photos/Y2f5V-fjzRU"
+  },
+  {
+    "id": "4",
+    "title": "Mompreneurs: Balancing Babies and Businesses",
+    "excerpt": "Being a mother is a full-time job. Add a business to the mix, and you’ve got a superhero in disguise. This piece highlights inspiring mompreneurs and how they manage it all.",
+    "fullContent": "The rise of the 'mompreneur' is more than a trend—it’s a movement. Today, more mothers are turning their passions into businesses, from home-based bakeries and handmade crafts to tech startups and coaching services.\n\nBut it’s not easy. Every day is a balancing act between school drop-offs, client meetings, baby feedings, and budgeting. Yet these women push through, driven by dreams and diapers alike.\n\nTake *Rina*, who runs an eco-friendly toy company during nap times. Or *Ashley*, who built a six-figure digital marketing firm after bedtime stories. Their secret? Time-blocking, self-discipline, and a strong support system.\n\nMompreneurs remind us that motherhood doesn't limit success—it enhances it. They don’t just build businesses; they build legacies.",
+    "author": "Riya Kapoor",
+    "submissionDate": "2025-04-30",
+    "category": "Lifestyle",
+    "readingTime": 6,
+    "imageUrl": "https://unsplash.com/photos/8manzosRGPE"
+  },
+  {
+    "id": "5",
+    "title": "Lessons My Mother Taught Me",
+    "excerpt": "From kindness to courage, mothers pass down lessons that shape our lives. This reflective blog explores timeless wisdom passed from mother to child.",
+    "fullContent": "My mother never sat me down with lectures. Instead, she lived her lessons. Watching her, I learned that kindness isn’t weakness—it’s strength. That patience speaks louder than anger. That showing up matters more than being perfect.\n\nShe taught me how to stretch a dollar and make it feel like a hundred. How to forgive even when it hurts. And most importantly, how to love—with presence, not presents.\n\nYears later, I catch myself saying things she once said. I hear her voice in my choices and her values in my decisions. Her lessons weren’t just for childhood; they were for life. And I carry them, proudly, into every room I enter.\n\nMothers are our first teachers, and their wisdom becomes the map we often don’t know we’re following—until we arrive somewhere that feels like home.",
+    "author": "Daniel Green",
+    "submissionDate": "2025-04-30",
+    "category": "Reflection",
+    "readingTime": 4,
+    "imageUrl": "https://unsplash.com/photos/HUJDz6CJEaM"
   }
 ]

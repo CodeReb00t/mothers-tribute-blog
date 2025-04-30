@@ -1,104 +1,133 @@
+// components/Hero.tsx
 'use client';
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import Image from 'next/image';
+import Image from "next/image";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+const articles = [
+  {
+    tag: "#Guides",
+    time: "8 minutes reading",
+    title: "Coventry City Guide Including Coventry Hotels",
+    description:
+      "The diseases most commonly seen in travellers are diarrhoea, malaria, accidents, wound infections and more...",
+    image: "/placeholder.png",
+  },
+  {
+    tag: "#Guides",
+    time: "6 minutes reading",
+    title: "Planning a Trip to Japan in the Time of Covid",
+    description:
+      "Whether you're just daydreaming or planning a trip, here's essential info about visiting Japan in the time of Covid-19...",
+    image: "/placeholder.png",
+  },
+];
 
 export default function Hero() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = 14;
+
+  const handleChangePage = (page: number) => {
+    setCurrentPage(page);
+  };
+
   return (
-    <div className="flex flex-col gap-10 px-4 md:px-16 py-8">
+    <section className="container mx-auto px-4 py-10">
 
-      {/* Hero Carousel */}
-      <section className="w-full">
-        <Carousel className="w-full max-w-5xl mx-auto">
-          <CarouselContent>
-            {[1, 2, 3].map((i) => (
-              <CarouselItem key={i}>
-                <div className="relative h-64 md:h-96 bg-gray-200 rounded-xl overflow-hidden">
-                  <Image
-                    src={`/images/hero-${i}.jpg`} // update with actual images
-                    alt="Hero image"
-                    layout="fill"
-                    objectFit="cover"
-                  />
-                  <div className="absolute inset-0 bg-black/30 flex flex-col justify-center items-start px-6 text-white">
-                    <h2 className="text-2xl md:text-4xl font-bold mb-2">
-                      When Is The Best Time of Year To Visit Japan?
-                    </h2>
-                    <Button variant="secondary">Read More</Button>
-                  </div>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
-      </section>
-
-      {/* Explore by Category */}
-      <section className="flex justify-center gap-4 flex-wrap">
-        {['Guides', 'Cities', 'Travels', 'Food'].map((cat) => (
-          <Button key={cat} variant="outline" className="rounded-full">
-            {cat}
-          </Button>
-        ))}
-      </section>
-
-      {/* Recent Articles */}
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {[1, 2, 3].map((i) => (
-          <Card key={i} className="hover:shadow-lg transition-shadow">
-            <Image
-              src={`/images/post-${i}.jpg`} // update with real images
-              alt={`Post ${i}`}
-              width={400}
-              height={250}
-              className="rounded-t-lg object-cover"
-            />
-            <CardContent className="p-4">
-              <p className="text-sm text-muted-foreground mb-1">#Guides · 4 min read</p>
-              <h3 className="text-lg font-semibold mb-2">
-                Coventry City Guide Including Coventry Hotels
-              </h3>
-              <Button variant="link" className="px-0">Read More</Button>
-            </CardContent>
-          </Card>
-        ))}
-      </section>
-
-      {/* Newsletter */}
-      <section className="max-w-md mx-auto bg-gray-100 p-6 rounded-xl text-center">
-        <h4 className="text-xl font-semibold mb-2">Subscribe to Newsletter</h4>
-        <p className="text-sm text-muted-foreground mb-4">
-          Get travel tips & inspiration delivered weekly!
-        </p>
-        <div className="flex gap-2">
-          <Input placeholder="Enter your email" />
-          <Button>Subscribe</Button>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        {/* Articles */}
+        <div className="lg:col-span-2 space-y-8">
+          {articles.map((article, index) => (
+            <div key={index} className="flex flex-col md:flex-row gap-4 border p-4 rounded-lg">
+              <div className="w-full md:w-1/3 bg-gray-200 flex items-center justify-center aspect-video">
+                <Image
+                  src={article.image}
+                  alt="Article image"
+                  width={300}
+                  height={200}
+                  className="object-cover w-full h-auto"
+                />
+              </div>
+              <div className="w-full md:w-2/3">
+                <p className="text-sm text-muted-foreground">
+                  {article.tag} · {article.time}
+                </p>
+                <h2 className="text-xl font-semibold mt-1">{article.title}</h2>
+                <p className="text-sm text-gray-600 mt-2">{article.description}</p>
+                <Button className="mt-4">Read more</Button>
+              </div>
+            </div>
+          ))}
         </div>
-      </section>
+
+        {/* Sidebar */}
+        <aside className="space-y-10">
+          <div className="bg-gray-100 p-6 rounded-lg text-center">
+            <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gray-300"></div>
+            <h3 className="font-bold">Devansh Kumar Gupta</h3>
+            <p className="text-sm text-muted-foreground mt-2">
+              For as long as I can remember, I’ve been obsessed with the idea of travel...
+            </p>
+            <Button variant="outline" className="mt-4">Follow me</Button>
+            <div className="flex justify-center gap-4 mt-4">
+              <span className="text-lg">🌐</span>
+              <span className="text-lg">📷</span>
+              <span className="text-lg">📹</span>
+            </div>
+          </div>
+        </aside>
+      </div>
 
       {/* Pagination */}
-      <section className="flex justify-center mt-8 gap-2">
-        {[1, 2, 3, 4, 5].map((page) => (
+      <div className="mt-10 flex justify-center items-center space-x-2">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={() => handleChangePage(Math.max(1, currentPage - 1))}
+          disabled={currentPage === 1}
+          className="bg-black text-white"
+        >
+          <ChevronLeft size={20} />
+        </Button>
+
+        {[1, 2, 3, 4, 5]
+          .filter(page => page <= totalPages)
+          .map((page) => (
+            <Button
+              key={page}
+              variant={currentPage === page ? "outline" : "ghost"}
+              onClick={() => handleChangePage(page)}
+              className="w-10 h-10"
+            >
+              {page}
+            </Button>
+          ))}
+
+        <span className="px-2">...</span>
+
+        {[10, 11, 12, 13, 14].map((page) => (
           <Button
             key={page}
-            variant="ghost"
-            className="w-10 h-10 rounded-full"
+            variant={currentPage === page ? "outline" : "ghost"}
+            onClick={() => handleChangePage(page)}
+            className="w-10 h-10"
           >
             {page}
           </Button>
         ))}
-      </section>
-    </div>
+
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={() => handleChangePage(Math.min(totalPages, currentPage + 1))}
+          disabled={currentPage === totalPages}
+          className="bg-black text-white"
+        >
+          <ChevronRight size={20} />
+        </Button>
+      </div>
+    </section>
   );
 }

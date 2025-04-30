@@ -4,6 +4,8 @@ import {Menu, Search, X} from "lucide-react";
 import {useState} from "react";
 import Link from "next/link";
 import {AnimatePresence, motion} from "framer-motion";
+import Banner from "@/components/Banner";
+import {usePathname} from "next/navigation";
 
 const navLinks = [
     {name: "Home", href: "/"},
@@ -13,6 +15,7 @@ const navLinks = [
 ];
 
 export default function Header() {
+    const pathname = usePathname()
     const [menuOpen, setMenuOpen] = useState(false);
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
@@ -20,7 +23,7 @@ export default function Header() {
         <>
             {/* Top Header - Always Visible */}
             <header
-                className="w-full flex items-center justify-between px-6 py-4 border-b bg-white fixed top-0 left-0 z-50">
+                className="w-full  flex items-center justify-between px-6 py-4 border-b bg-white fixed top-0 left-0 z-50">
                 <button onClick={() => setMenuOpen(true)}>
                     <Menu size={24}/>
                 </button>
@@ -31,6 +34,7 @@ export default function Header() {
                     <Search size={24}/>
                 </button>
             </header>
+            {pathname!== "/categories" && pathname!=="/contact" && <Banner/>}
 
             {/* AnimatePresence for Menu */}
             <AnimatePresence>
@@ -94,15 +98,15 @@ export default function Header() {
                                     <p className="text-sm mb-4">
                                         Subscribe to receive exclusive content!
                                     </p>
-                                    <form className="flex flex-col gap-4">
+                                    <form className="flex justify-between  gap-4">
                                         <input
                                             type="email"
                                             placeholder="devanshkg19@gmail.com"
-                                            className="p-2 rounded bg-transparent border text-white placeholder-gray-400"
+                                            className="p-2 rounded bg-transparent border-b flex-1 text-white placeholder-gray-400"
                                         />
                                         <button
                                             type="submit"
-                                            className="bg-white text-black py-2 rounded font-semibold"
+                                            className="bg-white text-black p-2 flex-1  font-semibold"
                                         >
                                             Subscribe
                                         </button>
