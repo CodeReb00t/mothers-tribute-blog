@@ -23,7 +23,7 @@ export default function Header() {
         <>
             {/* Top Header - Always Visible */}
             <header
-                className="w-full  flex items-center justify-between px-6 py-4 border-b bg-white fixed top-0 left-0 z-50">
+                className="w-full flex items-center justify-between px-6 py-4 fixed top-0 left-0 z-50 bg-transparent text-black">
                 <button onClick={() => setMenuOpen(true)}>
                     <Menu size={24}/>
                 </button>
@@ -34,7 +34,7 @@ export default function Header() {
                     <Search size={24}/>
                 </button>
             </header>
-            {pathname!== "/categories" && pathname!=="/contact" && <Banner/>}
+            {pathname !== "/categories" && pathname !== "/contact" && <Banner src="/p5.jpg"/>}
 
             {/* AnimatePresence for Menu */}
             <AnimatePresence>

@@ -8,7 +8,7 @@
     "submissionDate": "2025-04-28",
     "category": "Inspiration",
     "readingTime": 4,
-    "imageUrl": "https://unsplash.com/photos/OyCl7Y4y0Bk"
+    "imageUrl": "/p1.jpg"
   },
   {
     "id": "2",
@@ -19,7 +19,7 @@
     "submissionDate": "2025-04-27",
     "category": "Health",
     "readingTime": 3,
-    "imageUrl": "https://unsplash.com/photos/Cf4ClvPrHyA"
+    "imageUrl": "/p2.jpg"
   },
   {
     "id": "3",
@@ -30,7 +30,7 @@
     "submissionDate": "2025-04-29",
     "category": "Personal",
     "readingTime": 5,
-    "imageUrl": "https://unsplash.com/photos/Y2f5V-fjzRU"
+    "imageUrl": "/p3.jpg"
   },
   {
     "id": "4",
@@ -41,7 +41,7 @@
     "submissionDate": "2025-04-30",
     "category": "Lifestyle",
     "readingTime": 6,
-    "imageUrl": "https://unsplash.com/photos/8manzosRGPE"
+    "imageUrl": "/p4.jpg"
   },
   {
     "id": "5",
@@ -52,6 +52,6 @@
     "submissionDate": "2025-04-30",
     "category": "Reflection",
     "readingTime": 4,
-    "imageUrl": "https://unsplash.com/photos/HUJDz6CJEaM"
+    "imageUrl": "/p5.jpg"
   }
 ]

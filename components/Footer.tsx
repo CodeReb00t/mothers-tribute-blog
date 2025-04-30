@@ -1,42 +1,46 @@
 import React from 'react'
 import Link from "next/link";
 import Image from "next/image";
-
+import articles from '../data/articles.json'
 const Footer = () => {
+    const data=articles
     return (
-        <div className="bg-gray-200 py-10">
+        <div className="">
             {/* Carousel Section */}
-            <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-5 gap-4">
-                {Array.from({length: 5}).map((_, index) => (
-                    <div
-                        key={index}
-                        className="group relative bg-gray-300 aspect-square flex items-center justify-center hover:bg-gray-500 transition"
-                    >
-                        {/* Image Icon */}
-                        <Image
-                            src="/placeholder-image.png"
-                            alt="Image"
-                            height={28}
-                            width={28}
-                            className="w-12 h-12 opacity-50"
-                        />
+            <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-5 gap-4 pt-10">
+                {data.map((article) => (
+  <div
+    key={article.id}
+    className="group relative bg-gray-300 aspect-square flex items-center justify-center hover:bg-gray-500 transition"
+  >
+    {/* Image Icon */}
+    <Image
+      src={article.imageUrl}
+      alt="Image"
+      layout="fill" // Make the image fill the parent container
+      objectFit="cover" // Ensures the image covers the whole space without distortion
+      className="w-full h-full opacity-80 group-hover:opacity-40 transition-opacity" // Decreases opacity on hover
+    />
 
-                        {/* Heart and Comment */}
-                        <div
-                            className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition">
-                            <div className="flex space-x-4 items-center text-white">
-                                <div className="flex items-center space-x-1">
-                                    <span>❤️</span>
-                                    <span>1231</span>
-                                </div>
-                                <div className="flex items-center space-x-1">
-                                    <span>💬</span>
-                                    <span>543</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                ))}
+    {/* Heart and Comment */}
+    <div
+      className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition"
+    >
+      <div className="flex space-x-4 items-center text-white text-xl">
+        <div className="flex items-center space-x-1">
+          <span>❤️</span>
+          <span>1231</span>
+        </div>
+        <div className="flex items-center space-x-1">
+          <span>💬</span>
+          <span>543</span>
+        </div>
+      </div>
+    </div>
+  </div>
+))}
+
+
             </div>
 
             {/* Footer Section */}

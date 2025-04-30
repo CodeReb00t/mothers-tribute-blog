@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Inspiration",
+    "posts": [
+      {
+        "id": 1,
+        "title": "The Strength of a Mother",
+        "summary": "A mother’s strength is not measured by the weights she lifts, but by the burdens she silently bears...",
+        "time": "4 minutes reading",
+        "imageUrl": "/p1.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Health",
+    "posts": [
+      {
+        "id": 2,
+        "title": "Health Tips for Moms",
+        "summary": "Mothers often put everyone else first, but to pour into others, you must refill yourself...",
+        "time": "3 minutes reading",
+        "imageUrl": "/p2.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Personal",
+    "posts": [
+      {
+        "id": 3,
+        "title": "A Letter to My Mother",
+        "summary": "Dear Mom, I don’t say this enough, but thank you. Thank you for every ride to school...",
+        "time": "5 minutes reading",
+        "imageUrl": "/p3.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Personal",
+    "posts": [
+      {
+        "id": 4,
+        "title": "Mompreneurs: Balancing Babies and Businesses",
+        "summary": "The rise of the 'mompreneur' is more than a trend—it’s a movement...",
+        "time": "6 minutes reading",
+        "imageUrl": "/p4.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Inspiration",
+    "posts": [
+      {
+        "id": 5,
+        "title": "Lessons My Mother Taught Me",
+        "summary": "My mother never sat me down with lectures. Instead, she lived her lessons...",
+        "time": "4 minutes reading",
+        "imageUrl": "/p5.jpg"
+      }
+    ]
+  }
+]
