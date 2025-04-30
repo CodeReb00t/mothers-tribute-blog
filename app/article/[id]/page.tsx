@@ -1,14 +1,11 @@
+// app/article/[id]/page.tsx
+'use client';
+
 import articles from "@/data/articles.json";
 import { notFound } from "next/navigation";
 
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
-
-export default async function ArticlePage({ params }: PageProps) {
-  const article = articles.find((a) => a.id === params.id);
+export default function ArticlePage({ params }: any) {
+  const article = articles.find((a: any) => a.id === params.id);
 
   if (!article) return notFound();
 
@@ -16,8 +13,7 @@ export default async function ArticlePage({ params }: PageProps) {
     <div className="max-w-3xl mx-auto p-6 space-y-6">
       <h1 className="text-4xl font-bold">{article.title}</h1>
       <div className="text-gray-600 text-sm">
-        {article.author} | {article.submissionDate} | {article.category} |{" "}
-        {article.readingTime} min read
+        {article.author} | {article.submissionDate} | {article.category} | {article.readingTime} min read
       </div>
       <img
         src={article.imageUrl}
