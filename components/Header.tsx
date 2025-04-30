@@ -1,7 +1,7 @@
 "use client";
 
 import {Menu, Search, X} from "lucide-react";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Link from "next/link";
 import {AnimatePresence, motion} from "framer-motion";
 import Banner from "@/components/Banner";
@@ -18,25 +18,35 @@ export default function Header() {
     const pathname = usePathname()
     const [menuOpen, setMenuOpen] = useState(false);
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+    const images = [
+        "/p1.jpg",
+        "/p2.jpg",
+        "/p3.jpg",
+        "/p4.jpg",
+        "/p5.jpg",
+    ]
+    const [currentIndex, setCurrentIndex] = useState(0)
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex(prev => (prev + 1) % images.length);
+        }, 7000)
+        return () => clearInterval(interval)
+    }, [images.length]);
 
     return (
         <>
-            {/* Top Header - Always Visible */}
             <header
                 className="w-full flex items-center justify-between px-6 py-4 fixed top-0 left-0 z-50 bg-transparent text-black">
                 <button onClick={() => setMenuOpen(true)}>
                     <Menu size={24}/>
                 </button>
-
                 <h1 className="text-lg font-semibold">Mothers Day Tribute Blog</h1>
-
                 <button>
                     <Search size={24}/>
                 </button>
             </header>
-            {pathname !== "/categories" && pathname !== "/contact" && <Banner src="/p5.jpg"/>}
+            {pathname === "/" && <Banner src={images[currentIndex]}/>}
 
-            {/* AnimatePresence for Menu */}
             <AnimatePresence>
                 {menuOpen && (
                     <motion.div
@@ -45,7 +55,6 @@ export default function Header() {
                         animate={{opacity: 1}}
                         exit={{opacity: 0}}
                     >
-                        {/* Header inside Menu (X button) */}
                         <div className="w-full flex items-center justify-between px-6 py-4 border-b border-white">
                             <button onClick={() => setMenuOpen(false)}>
                                 <X size={24}/>
@@ -58,9 +67,7 @@ export default function Header() {
                             </button>
                         </div>
 
-                        {/* Main Menu Content */}
                         <div className="flex-1 flex flex-col md:flex-row p-8">
-                            {/* Left: Links */}
                             <div className="flex-1 flex flex-col gap-8 justify-center text-4xl font-light">
                                 {navLinks.map((link, index) => (
                                     <Link
@@ -82,7 +89,8 @@ export default function Header() {
                                       >
                                         —
                                       </motion.span>
-                                      <span className="transition-all duration-300 group-hover:tracking-widest group-hover:text-pink-400">
+                                      <span
+                                          className="transition-all duration-300 group-hover:tracking-widest group-hover:text-pink-400">
                                         {link.name}
                                       </span>
                                     </span>
@@ -91,7 +99,6 @@ export default function Header() {
                                 ))}
                             </div>
 
-                            {/* Right: Newsletter */}
                             <div className="flex-1 flex flex-col justify-center items-center mt-8 md:mt-0">
                                 <div className="border p-6 w-full max-w-md">
                                     <h2 className="text-xl mb-2">Newsletter</h2>
@@ -118,7 +125,6 @@ export default function Header() {
                 )}
             </AnimatePresence>
 
-            {/* Space below header */}
             <div className="h-16"/>
         </>
     );
