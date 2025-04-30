@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mother's Day Tribute Blog 💐👩‍👧‍👦
+
+This project is a heartfelt tribute to mothers, featuring a collection of inspirational and health-related stories celebrating motherhood. The blog includes various articles honoring mothers, sharing health tips, personal letters, and reflections on the powerful influence mothers have in our lives. 🌸
+
+## Project Overview
+
+This Mother's Day Tribute Blog showcases multiple articles, including:
+
+* **Inspiring Stories 💖:** Articles about the strength of mothers, personal letters, and reflections on motherhood.
+* **Health Tips for Moms 🏃‍♀️🍎:** Practical advice for maintaining health and well-being.
+* **Mompreneurs 💼👩‍👧‍👦:** Features on mothers balancing business and family life.
+* **Timeless Wisdom 🧠:** Lessons passed down from mother to child.
+
+Each article is written to inspire and share the experience of motherhood, offering support, inspiration, and love to all mothers.
+
+## Features
+
+* **Article List 📜:** Display of articles with a short excerpt, author name, and reading time.
+* **Pagination 🔄:** Navigate through multiple pages of content.
+* **Responsive Design 📱💻:** The blog adapts seamlessly across different screen sizes, providing an optimal reading experience for all users.
+* **Detailed Articles 📚:** Full-length content for each article, accessible through a "Read More" button.
 
 ## Getting Started
 
-First, run the development server:
+To run this project locally, follow the steps below:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1.  Clone this repository to your local machine:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    ```bash
+    git clone https://github.com/CodeReb00t/mothers-tribute-blog.git
+    ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2.  Install the dependencies:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    ```bash
+    cd mothers-day-tribute-blog
+    npm install
+    ```
 
-## Learn More
+3.  Run the development server:
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    npm run dev
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4.  Open your browser and navigate to `http://localhost:3000` to see the blog in action.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Technologies Used
 
-## Deploy on Vercel
+* **Next.js:** The framework used to build the website.
+* **TypeScript:** For type safety and better development experience.
+* **Tailwind CSS:** For styling and responsive design.
+* **React:** Used for building interactive components.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Live Demo
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out the live demo of the blog here: https://dearmom-seven.vercel.app/ 🌐
+
+## Special Thanks
+
+**ExpertHire:** Thank you for providing the resources and support throughout this task. 🙏
+
+**Shreeram Sir:** A big thank you for guiding me through this project and helping me understand the essential concepts needed for success. 🙌
