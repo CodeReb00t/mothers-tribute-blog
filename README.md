@@ -60,4 +60,4 @@ Check out the live demo of the blog here: https://dearmom-seven.vercel.app/ 🌐
 
 **ExpertHire:** Thank you for providing the resources and support throughout this task. 🙏
 
-**Shreeram Sir:** A big thank you for guiding me through this project and helping me understand the essential concepts needed for success. 🙌
+**Shriram Sir:** A big thank you for guiding me through this project and helping me understand the essential concepts needed for success. 🙌
